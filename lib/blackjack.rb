@@ -26,7 +26,8 @@ def initial_round
   card_one = deal_card
   card_two = deal_card
   card_total = card_one + card_two
-  display_card_total(card_total) #once you have figured out the sum of your two cards, you can pass the total in as an argumnt so your phrase is displayed.
+  display_card_total(card_total) 
+  #once you have figured out the sum of your two cards, you can pass the total in as an argumnt so your phrase is displayed.
   return card_total
 end
 
@@ -43,7 +44,7 @@ def hit?(card_total)
 end
 
 def invalid_command
-  puts "Please enter a valid command"
+  print "Please enter a valid command"
   prompt_user
   get_user_input
 end
